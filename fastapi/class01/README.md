@@ -13,18 +13,12 @@ responds with `{"Hello": "World"}`.
 |------|---------|---------|
 | Python | 3.12 or newer | [python.org/downloads](https://www.python.org/downloads/) |
 | uv | any recent | see below |
-| VS Code | optional | [code.visualstudio.com](https://code.visualstudio.com/download) |
+| VS Code | any recent | [code.visualstudio.com](https://code.visualstudio.com/download) |
 
 Install **uv** (the package manager this course uses):
 
 ```powershell
-# Windows (PowerShell)
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-```bash
-# macOS / Linux
-curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 > **Restart your terminal** after installing uv, or the `uv` command will not
@@ -40,6 +34,41 @@ uv --version          # uv 0.12.7 (...)
 > Your system Python does not have to be exactly 3.12. This project pins 3.12
 > in `.python-version`, and uv downloads that version automatically when
 > needed.
+
+---
+
+## Create your project folder
+
+Every class starts in its own folder. On Windows:
+
+**1. Make the folder**
+
+Create a new folder wherever you keep your work — your Desktop is fine — and
+name it for the class, for example `class01`.
+
+**2. Open a terminal inside it**
+
+Double-click into the folder so you can see its contents. Click the **address
+bar** at the top of the window, type `cmd`, and press **Enter**.
+
+A terminal window opens, already pointed at that folder. This saves you having
+to `cd` your way there by hand.
+
+**3. Open the folder in VS Code**
+
+In that terminal, type:
+
+```powershell
+code .
+```
+
+The `.` means "this folder". VS Code opens with your folder loaded, and its
+built-in terminal (**Ctrl+`**) starts in the same place — so you can run every
+command below without leaving the editor.
+
+> If `code` is not recognized, open VS Code manually and use
+> **File → Open Folder**. To fix the command itself, press `Ctrl+Shift+P` in
+> VS Code and run *Shell Command: Install 'code' command in PATH*.
 
 ---
 
@@ -70,15 +99,20 @@ Stop the server with `Ctrl+C`.
 
 This is the class exercise — the same project, created from an empty folder.
 
-**1. Create the project**
+**1. Initialize the project**
 
-```bash
-uv init class01
-cd class01
+In the terminal, inside the folder you made above:
+
+```powershell
+uv init
 ```
 
 This generates `pyproject.toml` (where your dependencies are recorded),
-`.python-version`, and a starter `src/` package.
+`.python-version`, and a starter `src/` package. The project takes its name
+from the folder.
+
+> Have not made the folder yet? `uv init class01` creates it and initializes
+> it in one step — then `cd class01`.
 
 **2. Add FastAPI and the server**
 
@@ -115,11 +149,7 @@ uv run uvicorn main:app --reload
 activate it — so plain `python` and `uvicorn` point at the project — do:
 
 ```powershell
-.venv\Scripts\activate       # Windows
-```
-
-```bash
-source .venv/bin/activate    # macOS / Linux
+.venv\Scripts\activate
 ```
 
 Then run the server without the `uv run` prefix:
