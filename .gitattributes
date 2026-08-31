@@ -1,0 +1,29 @@
+# Normalize to LF in the repo, native in the working tree
+* text=auto eol=lf
+
+# Explicit text types
+*.py    text diff=python
+*.md    text
+*.toml  text
+*.txt   text
+*.cfg   text
+*.yml   text
+*.yaml  text
+
+# Notebooks: JSON, but noisy to diff by line
+*.ipynb text linguist-language=Jupyter\ Notebook
+
+# Lockfiles: text, but not worth reviewing line-by-line
+uv.lock text -diff linguist-generated
+
+# Windows-only scripts keep CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# Binary
+*.png   binary
+*.jpg   binary
+*.gif   binary
+*.pdf   binary
+*.ico   binary
