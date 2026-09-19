@@ -19,7 +19,7 @@ Take your time here. APIs, RAG and AI agents all depend on it.
 ## 🧠 What You Will Learn
 
 - **JSON** — the format almost every API and every n8n node speaks
-- **Objects** — data stored as named fields, like `{ "name": "Ali" }`
+- **Objects** — data stored as named fields, like `{ "name": "Jamal" }`
 - **Arrays** — an ordered list of values, like `["apple", "banana"]`
 - **Items** — n8n does not pass one object between nodes, it passes a *list* of
   them, and that is the single most common thing beginners misunderstand
