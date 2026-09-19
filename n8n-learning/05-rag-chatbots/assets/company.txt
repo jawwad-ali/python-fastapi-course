@@ -1,0 +1,4 @@
+Company Name: ABC Store
+Return Policy: Customers can return a product within 7 days.
+Delivery: Delivery usually takes 3 to 5 working days.
+Support Email: support@abcstore.com
