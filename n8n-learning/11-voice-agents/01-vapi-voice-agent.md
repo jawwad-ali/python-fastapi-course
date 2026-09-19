@@ -12,14 +12,14 @@ You write the instructions, and Vapi handles the talking.
 > **⚠️ Vapi charges per minute.** A new account comes with free credits, which is
 > plenty for this lesson. Keep your test calls short.
 
-## 🛠️ Step 1 — Create a Vapi Account
+## 🛠️ Step 1 — Create Account
 
 1. Open [vapi.ai](https://vapi.ai).
 2. Click **Sign Up** and create a free account.
 3. You land on the Vapi dashboard, with a menu down the left side.
    **Assistants** is near the top of it.
 
-## 🛠️ Step 2 — Create an Assistant
+## 🛠️ Step 2 — Create Assistant
 
 1. Click **Assistants** in the left menu.
 2. Click **Create Assistant**.
@@ -40,17 +40,19 @@ Answer questions clearly and briefly.
 
 6. Click **Publish** at the top right to save.
 
-## 🛠️ Step 3 — Configure the Voice Agent
+## 🛠️ Step 3 — Configure
 
 1. Still in the **Model** tab, leave the provider and model on their defaults.
 2. Click the **Voice** tab. Pick any voice and play its sample.
 3. Click the **Transcriber** tab and set the language to **English**.
 4. Click **Publish** again.
 
+> Click **Publish** after every change, or your next test uses the old version.
+
 > Vapi moves things around as it updates. If a tab name looks different, find the
 > section that sets the model, the voice, or the language.
 
-## 🛠️ Step 4 — Test the Agent
+## 🛠️ Step 4 — Test
 
 1. Click **Talk to Assistant** at the top of the assistant page.
 2. Allow microphone access when your browser asks.
@@ -65,12 +67,12 @@ What are your support hours?
 The agent has no real company data yet, so it will invent the hours. That is
 expected for now.
 
-## 🧠 Step 5 — Understand
+## 🧠 Understand
 
 ```text
 User speaks
     ↓
-Vapi Voice Agent
+Vapi
     ↓
 AI Model
     ↓
@@ -78,7 +80,7 @@ Voice Response
 ```
 
 - **User speaks** — you talk into your microphone.
-- **Vapi Voice Agent** — Vapi runs the call.
+- **Vapi** — it runs the call and turns your speech into text.
 - **AI Model** — it reads your words and decides the reply.
 - **Voice Response** — the reply is spoken back to you.
 
@@ -97,9 +99,3 @@ Answer questions clearly and briefly.
 ```text
 What time do you open?
 ```
-
-## ✅ Remember
-
-- Vapi builds voice agents you talk to instead of type to.
-- The System Prompt decides how the agent behaves.
-- Click **Publish** after every change, or your test uses the old version.

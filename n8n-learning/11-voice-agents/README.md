@@ -1,53 +1,23 @@
 # 11 — Voice Agents
 
-Everything so far has been typed. This module gives your agent a voice, so a
-person can phone it and talk.
+Learn to build AI voice agents using Vapi and Retell AI, then connect one to your
+own documents so it answers from real information.
 
-> **⚠️ This is the first module that costs money.** Vapi and Retell both charge
-> per minute of conversation. Both give you free trial credits when you sign up,
-> which is enough for this module if you keep your test calls short. Buying a
-> phone number costs extra — you do not need one here, because both platforms let
-> you talk to your agent in the browser for free.
+> **⚠️ This module costs money.** Vapi and Retell both charge per minute. Signup
+> credits are enough for these lessons if you keep test calls short. You do not
+> need to buy a phone number — both let you talk to your agent in the browser.
 
-## 🎯 Learning Objectives
+## Lessons
 
-- Build a voice agent that answers questions out loud
-- Connect a voice platform to an n8n workflow
-- Let a voice agent call your workflow during a live conversation
-- Answer voice questions from your own documents
-- Choose between Vapi and Retell for a given job
+1. [Build Your First Voice Agent with Vapi](01-vapi-voice-agent.md)
+2. [Build Your First Voice Agent with Retell AI](02-retell-voice-agent.md)
+3. [Add RAG to a Voice Agent](03-voice-agent-rag.md)
 
-## 🧠 What You Will Learn
+## Projects
 
-- **Voice agent** — an AI agent you speak to instead of typing to
-- **The three pieces** — speech to text, the AI model, then text to speech
-- **System prompt** — how you tell a voice agent who it is and how to speak
-- **Tools over webhooks** — the voice platform calls your n8n workflow mid-call,
-  waits for the answer, and speaks it
-- **Public URLs** — why `localhost` does not work here, and how to fix it
-- **Voice + RAG** — answering out loud from your own documents
-- **Latency** — why a voice agent must reply fast, and what makes it slow
+1. [Voice Customer Support](projects/01-voice-customer-support/)
+2. [Voice Appointment Agent](projects/02-voice-appointment-agent/)
+3. [Voice Sales Agent](projects/03-voice-sales-agent/)
 
-## 🛠️ Hands-on Practice
-
-| Lesson | You build |
-|--------|-----------|
-| [01 — Vapi Voice Agent](01-vapi-voice-agent.md) | A voice agent that calls an n8n workflow |
-| [02 — Retell Voice Agent](02-retell-voice-agent.md) | The same idea on a second platform |
-| [03 — Voice Agent with RAG](03-voice-agent-rag.md) | A voice agent that answers from your documents |
-
-## 💪 Exercises
-
-Each lesson ends with a **Try It** task. Do it before moving on.
-
-## 🚀 Challenge
-
-Make your voice agent handle a question it cannot answer, without inventing one.
-Then make it stay polite when the caller interrupts it.
-
-## 📚 Module Contents
-
-- `01-vapi-voice-agent.md`
-- `02-retell-voice-agent.md`
-- `03-voice-agent-rag.md`
-- `projects/` — three voice agent projects
+Do the lessons in order. Lesson 03 uses the RAG skills from module 05 and the
+webhook skills from module 03.
