@@ -1,50 +1,89 @@
-# 10 — Capstone Projects
+# Capstone Projects
 
-Full projects that combine everything from modules 00 to 09.
+## 🎯 Goal
 
-These are not exercises with one right answer. Each one is a realistic brief —
-the kind of thing a client or an employer would actually ask for — and you decide
-how to build it.
+These projects combine everything from modules 00 to 09 into complete, working
+systems. Each one is something you could show to an employer or a client.
 
-Do these only after finishing the learning modules. Each project assumes you are
-comfortable with data, APIs, AI, agents, and production concerns together.
+## 🚀 Project 1 — AI Customer Support Agent
 
-## 🎯 Learning Objectives
+*Uses: modules 05, 06, 07, 09*
 
-- Turn a vague business request into a workflow design before building anything
-- Combine RAG, agents, databases and external APIs in one working system
-- Handle the failure cases, not only the happy path
-- Explain and defend your design decisions to someone else
-- Ship something you would be willing to put your name on
+Build an AI Agent that:
 
-## 🧠 What You Will Learn
+- Answers questions using company documents with RAG.
+- Uses tools when needed.
+- Handles unknown questions safely.
+- Keeps a simple conversation flow.
 
-Each project pulls together several modules at once. The skill being trained here
-is no longer any single node — it is judgement: what to build, what to leave out,
-and where to put a human in the loop.
+## 🚀 Project 2 — Document Research Assistant
 
-## 🛠️ Hands-on Practice
+*Uses: modules 05, 06*
 
-_Projects will be added here. Planned:_
+Build a chatbot that:
 
-1. **AI Customer Support Agent** — answers customer questions, escalates to a
-   human when it is unsure
-2. **RAG Knowledge Base Chatbot** — answers from your own documents, with sources
-3. **Lead Qualification Agent** — scores and routes incoming leads
-4. **Invoice Processing Automation** — reads invoices, extracts the data, files it
-5. **AI Business Operations Agent** — an agent with access to several internal
-   systems
+- Accepts multiple documents.
+- Finds relevant information.
+- Uses an AI Agent to answer questions.
+- Clearly shows which document the answer came from.
 
-_Not implemented yet._
+## 🚀 Project 3 — AI Invoice Assistant
 
-## 💪 Exercises
+*Uses: modules 02, 04, 06, 07*
 
-_Coming soon._
+Build a workflow that:
 
-## 🚀 Challenge
+- Receives an invoice document.
+- Extracts important information.
+- Checks the extracted data.
+- Uses an AI Agent when additional action is required.
+- Stores the result in a database.
 
-_Coming soon._
+## 🚀 Project 4 — AI Lead Qualification Agent
 
-## 📚 Module Contents
+*Uses: modules 03, 04, 06, 07*
 
-_Projects will be listed here as they are added._
+Build an agent that:
+
+- Receives a customer inquiry.
+- Understands the customer's requirements.
+- Uses tools to collect information.
+- Classifies the lead.
+- Produces a final summary.
+
+## 🚀 Project 5 — End-to-End AI Business Assistant
+
+*Uses: every module*
+
+Build a complete system combining:
+
+- AI Agent
+- RAG
+- Multiple tools
+- Database
+- API
+- Error handling
+- Human approval before an important action
+
+This is the hardest one. Do it last.
+
+## 📋 Rules for Every Capstone
+
+1. Build the workflow yourself.
+2. Test normal cases.
+3. Test incorrect or missing input.
+4. Test tool and API failures.
+5. Document how your workflow works.
+6. Add a short README for your project.
+
+## ✅ Final Check
+
+Before considering a project complete, verify:
+
+- The workflow works from start to finish.
+- Errors are handled.
+- The AI uses the correct information.
+- Tools are used correctly.
+- You can explain what every major node does.
+
+> If you cannot explain a node, you have not finished the project yet.
